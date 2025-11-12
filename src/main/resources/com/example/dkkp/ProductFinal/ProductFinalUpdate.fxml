@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.StackPane?>
+<?import io.github.palexdev.materialfx.controls.MFXButton?>
+<?import io.github.palexdev.materialfx.controls.MFXTextField?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.control.ScrollPane?>
+<?import io.github.palexdev.mfxcore.controls.Label?>
+<?import io.github.palexdev.materialfx.controls.MFXTableView?>
+<?import io.github.palexdev.materialfx.controls.MFXTableColumn?>
+<?import io.github.palexdev.materialfx.controls.MFXFilterComboBox?>
+<StackPane xmlns:fx="http://javafx.com/fxml" stylesheets="@../DKKP.css" prefWidth="-Infinity">
+<ScrollPane fitToWidth="true" fitToHeight="true">
+<VBox spacing="20" prefWidth="800">
+<MFXButton fx:id="backBtn" buttonType="RAISED" mnemonicParsing="false" text="Back" prefWidth="50" prefHeight="25" styleClass="Btn"/>
+<HBox alignment="TOP_CENTER">
+<VBox spacing="10" alignment="TOP_CENTER" HBox.hgrow="ALWAYS">
+<HBox>
+<Label alignment="CENTER" text="Option Values Table" styleClass="pdLabel"/>
+</HBox>
+<StackPane fx:id="optionValue" maxWidth="800" HBox.hgrow="ALWAYS">
+<MFXTableView fx:id="optionValueTable" footerVisible="false" prefWidth="700" minHeight="380">
+<tableColumns>
+<MFXTableColumn fx:id="ID_OPTION_VALUE" text="ID" styleClass="productBF" style="-fx-font-size: 10px;"/>
+<MFXTableColumn fx:id="ID_OPTION" text="ID OPTION" styleClass="productBF" style="-fx-font-size: 10px;"/>
+<MFXTableColumn fx:id="NAME_OPTION" text="NAME OPTION" styleClass="productBF" style="-fx-font-size: 10px;"/>
+<MFXTableColumn fx:id="VALUE" text="NAME VALUE" styleClass="productBF" style="-fx-font-size: 10px;"/>
+</tableColumns>
+</MFXTableView>
+</StackPane>
+</VBox>
+<VBox spacing="10">
+<HBox spacing="5">
+<MFXButton fx:id="image" buttonType="RAISED" mnemonicParsing="false" text="Image" styleClass="Btn"/>
+</HBox>
+<HBox>
+<ImageView fx:id="imageView" fitWidth="300" fitHeight="200" preserveRatio="true"/>
+</HBox>
+<HBox spacing="5">
+<MFXTextField editable="false" floatingText="FINAL PRODUCT" fx:id="ID_FINAL_PRODUCT" floatMode="BORDER" prefWidth="250" prefHeight="40"/>
+</HBox>
+<HBox spacing="5">
+<MFXFilterComboBox floatingText="BASE PRODUCT" fx:id="baseProductField" floatMode="BORDER" prefWidth="250" prefHeight="40"/>
+</HBox>
+<HBox spacing="5">
+<MFXTextField fx:id="NAME_PRODUCT" floatingText="NAME PRODUCT" floatMode="BORDER" prefWidth="200"/>
+</HBox>
+<HBox spacing="5">
+<MFXTextField fx:id="DES_PRODUCT" floatingText="DESCRIPTION" floatMode="BORDER" prefWidth="200"/>
+</HBox>
+<HBox spacing="5">
+<MFXTextField fx:id="PRICE" floatingText="NEW PRICE" floatMode="BORDER" prefWidth="200"/>
+</HBox>
+<HBox spacing="5">
+<MFXTextField fx:id="DISCOUNT" floatingText="NEW DISCOUNT" floatMode="BORDER" prefWidth="200"/>
+</HBox>
+</VBox>
+</HBox>
+<HBox alignment="TOP_CENTER" spacing="10">
+<MFXButton fx:id="updateBtn" buttonType="RAISED" mnemonicParsing="false" text="Update" prefWidth="80" prefHeight="40" styleClass="Btn"/>
+</HBox>
+</VBox>
+</ScrollPane>
+</StackPane>

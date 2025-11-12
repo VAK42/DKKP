@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.StackPane?>
+<?import io.github.palexdev.materialfx.controls.MFXButton?>
+<?import io.github.palexdev.materialfx.controls.MFXTextField?>
+<StackPane xmlns:fx="http://javafx.com/fxml" fx:id="main" styleClass="productAP" stylesheets="@../DKKP.css">
+<VBox spacing="10">
+<MFXButton fx:id="backBtn" buttonType="RAISED" mnemonicParsing="false" text="Back" prefWidth="70" styleClass="Btn"/>
+<HBox spacing="5">
+<MFXTextField fx:id="ID_OPTION" floatingText="ID OPTION" floatMode="BORDER" prefWidth="200"/>
+</HBox>
+<HBox spacing="5">
+<MFXTextField fx:id="NAME_OPTION" floatingText="OPTION NAME" floatMode="BORDER" prefWidth="200"/>
+</HBox>
+<HBox alignment="CENTER">
+<MFXButton fx:id="updateBtn" buttonType="RAISED" mnemonicParsing="false" text="Update" styleClass="Btn"/>
+</HBox>
+</VBox>
+</StackPane>

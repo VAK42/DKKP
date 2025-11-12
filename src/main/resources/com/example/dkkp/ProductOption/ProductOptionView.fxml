@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?import io.github.palexdev.materialfx.controls.*?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.layout.StackPane?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.Region?>
+<StackPane xmlns:fx="http://javafx.com/fxml" fx:id="main" styleClass="productAP">
+<HBox spacing="5">
+<VBox HBox.hgrow="ALWAYS" alignment="TOP_CENTER" spacing="5">
+<HBox spacing="5">
+<VBox>
+<Label fx:id="totalRowLabel" text=" "/>
+<Region prefWidth="10"/>
+<Label fx:id="numberSetOff" text=" "/>
+<Label fx:id="numberTotalPage" text=" "/>
+</VBox>
+<MFXButton buttonType="RAISED" fx:id="searchFld" mnemonicParsing="false" text="⚙ Filter" prefWidth="70" styleClass="Btn"/>
+<MFXButton fx:id="crtBtn" buttonType="RAISED" mnemonicParsing="false" text="+ Create" prefWidth="70" styleClass="Btn"/>
+<MFXButton fx:id="updBtn" buttonType="RAISED" mnemonicParsing="false" text="- Update" prefWidth="70" styleClass="Btn"/>
+<MFXButton fx:id="delBtn" buttonType="RAISED" mnemonicParsing="false" text="X Delete" prefWidth="70" styleClass="Btn"/>
+<MFXButton fx:id="refreshBtn" buttonType="RAISED" mnemonicParsing="false" text="🔄 Refresh" prefWidth="100" styleClass="Btn"/>
+<MFXTextField fx:id="setOffField" style="-fx-font-size: 10px;" prefWidth="150" promptText="Enter number row per page" prefHeight="30" minHeight="1">
+</MFXTextField>
+</HBox>
+<MFXTableView fx:id="productTable" footerVisible="false" minHeight="380">
+<tableColumns>
+<MFXTableColumn fx:id="ID_OPTION" text="ID OPTION" styleClass="productBF"/>
+<MFXTableColumn fx:id="NAME_OPTION" text="NAME OPTION" styleClass="productBF"/>
+</tableColumns>
+</MFXTableView>
+<HBox fx:id="paginationHBox" spacing="5" alignment="CENTER">
+<MFXButton fx:id="prevBtn" buttonType="RAISED" mnemonicParsing="false" text="◀" styleClass="Btn"/>
+<MFXButton fx:id="prevPageBtn" buttonType="RAISED" mnemonicParsing="false" text="←" styleClass="Btn"/>
+<Label fx:id="pageLabel1" text="1" styleClass="paginationLabel"/>
+<Label fx:id="pageLabel2" text="2" styleClass="paginationLabel"/>
+<Label fx:id="pageLabel3" text="3" styleClass="paginationLabel"/>
+<MFXButton fx:id="nextPageBtn" buttonType="RAISED" mnemonicParsing="false" text="→" styleClass="Btn"/>
+<MFXButton fx:id="nextBtn" buttonType="RAISED" mnemonicParsing="false" text="▶" styleClass="Btn"/>
+</HBox>
+</VBox>
+</HBox>
+</StackPane>

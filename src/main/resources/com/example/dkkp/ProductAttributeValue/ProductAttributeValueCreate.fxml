@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.StackPane?>
+<?import javafx.geometry.Insets?>
+<?import io.github.palexdev.materialfx.controls.MFXButton?>
+<?import io.github.palexdev.materialfx.controls.MFXTextField?>
+<?import io.github.palexdev.materialfx.controls.MFXFilterComboBox?>
+<StackPane xmlns:fx="http://javafx.com/fxml" fx:id="main" styleClass="productAP">
+<VBox spacing="10">
+<MFXButton fx:id="back" buttonType="RAISED" mnemonicParsing="false" text="Back" prefWidth="70" styleClass="Btn"/>
+<HBox spacing="5">
+<MFXFilterComboBox floatingText="BASE PRODUCT" fx:id="baseProductField" floatMode="BORDER" prefWidth="250" prefHeight="40">
+</MFXFilterComboBox>
+</HBox>
+<HBox spacing="5">
+<MFXFilterComboBox floatingText="ATTRIBUTE" fx:id="attributeField" floatMode="BORDER" prefWidth="250" prefHeight="40">
+</MFXFilterComboBox>
+</HBox>
+<HBox spacing="5">
+<MFXTextField fx:id="VALUE" floatingText="VALUE" floatMode="BORDER" prefWidth="200"/>
+</HBox>
+<HBox alignment="CENTER">
+<MFXButton fx:id="createBtn" buttonType="RAISED" mnemonicParsing="false" text="Create" styleClass="Btn"/>
+</HBox>
+</VBox>
+</StackPane>

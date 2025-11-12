@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?import javafx.scene.layout.*?>
+<?import io.github.palexdev.materialfx.controls.MFXButton?>
+<?import io.github.palexdev.materialfx.controls.MFXTextField?>
+<?import io.github.palexdev.materialfx.controls.MFXFilterComboBox?>
+<VBox xmlns:fx="http://javafx.com/fxml" fx:id="main" stylesheets="@../DKKP.css" alignment="CENTER" spacing="10" maxWidth="450" styleClass="loginVB">
+<VBox spacing="10">
+<MFXButton buttonType="RAISED" fx:id="back" mnemonicParsing="false" text="Back" prefWidth="50" prefHeight="25" styleClass="Btn"/>
+<MFXTextField fx:id="ID_ATTRIBUTE" floatingText="ID ATTRIBUTE" floatMode="BORDER" prefWidth="150"/>
+<MFXTextField fx:id="NAME_ATTRIBUTE" floatingText="NAME ATTRIBUTE" floatMode="BORDER" prefWidth="150"/>
+<MFXFilterComboBox floatingText="CATEGORY" fx:id="cateField" floatMode="BORDER" prefWidth="250" prefHeight="40">
+</MFXFilterComboBox>
+<MFXButton fx:id="applyButton" buttonType="RAISED" mnemonicParsing="false" text="Submit" styleClass="Btn"/>
+</VBox>
+</VBox>

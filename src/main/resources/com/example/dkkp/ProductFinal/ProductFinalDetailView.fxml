@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.StackPane?>
+<?import javafx.scene.control.Label?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.image.Image?>
+<?import io.github.palexdev.materialfx.controls.MFXButton?>
+<StackPane xmlns:fx="http://javafx.com/fxml" fx:controller="com.example.dkkp.controller.ImportDetailController" fx:id="main" styleClass="productAP">
+<VBox spacing="10">
+<MFXButton fx:id="bckBtn" buttonType="RAISED" mnemonicParsing="false" text="Back" prefWidth="70" styleClass="Btn"/>
+<HBox spacing="5">
+<VBox.margin><Insets left="90"/></VBox.margin>
+<VBox spacing="10" alignment="TOP_CENTER" HBox.hgrow="ALWAYS">
+<StackPane maxWidth="200" styleClass="Btn">
+<ImageView fitWidth="200" fitHeight="200" preserveRatio="true">
+<Image url="@../../../../../../../DKKP/src/main/resources/com/example/dkkp/DKKP.png"/>
+</ImageView>
+</StackPane>
+</VBox>
+</HBox>
+<HBox spacing="5">
+<VBox.margin><Insets left="90"/></VBox.margin>
+<Label text="ID FINAL PRODUCT:" styleClass="pdLabel"/>
+<Label text="0"/>
+</HBox>
+<HBox spacing="5">
+<VBox.margin><Insets left="90"/></VBox.margin>
+<Label text="ID BASE PRODUCT:" styleClass="pdLabel"/>
+<Label text="0"/>
+</HBox>
+<HBox spacing="5">
+<VBox.margin><Insets left="90"/></VBox.margin>
+<Label text="NAME PRODUCT:" styleClass="pdLabel"/>
+<Label text="0"/>
+</HBox>
+<HBox spacing="5">
+<VBox.margin><Insets left="90"/></VBox.margin>
+<Label text="QUANTITY:" styleClass="pdLabel"/>
+<Label text="0"/>
+</HBox>
+<HBox spacing="5">
+<VBox.margin><Insets left="90"/></VBox.margin>
+<Label text="DESCRIPTION:" styleClass="pdLabel"/>
+<Label text="0"/>
+</HBox>
+<HBox spacing="5">
+<VBox.margin><Insets left="90"/></VBox.margin>
+<Label text="PRICE:" styleClass="pdLabel"/>
+<Label text="0"/>
+</HBox>
+<HBox spacing="5">
+<VBox.margin><Insets left="90"/></VBox.margin>
+<Label text="DISCOUNT:" styleClass="pdLabel"/>
+<Label text="0"/>
+</HBox>
+</VBox>
+</StackPane>

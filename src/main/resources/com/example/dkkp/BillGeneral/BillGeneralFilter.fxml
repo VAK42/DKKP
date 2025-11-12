@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?import java.lang.*?>
+<?import javafx.collections.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import io.github.palexdev.materialfx.controls.MFXButton?>
+<?import io.github.palexdev.materialfx.controls.MFXComboBox?>
+<?import io.github.palexdev.materialfx.controls.MFXTextField?>
+<?import io.github.palexdev.materialfx.controls.MFXFilterComboBox?>
+<?import io.github.palexdev.materialfx.controls.MFXDatePicker?>
+<VBox prefHeight="500.0" prefWidth="350.0" spacing="15" xmlns="http://javafx.com/javafx/17.0.12" xmlns:fx="http://javafx.com/fxml/1" styleClass="productAP" stylesheets="@../DKKP.css">
+<MFXButton buttonType="RAISED" fx:id="back" mnemonicParsing="false" text="Back" prefWidth="50" prefHeight="25" styleClass="Btn"/>
+<HBox alignment="TOP_CENTER" prefHeight="60.0" prefWidth="350.0">
+<VBox spacing="10" alignment="TOP_CENTER" HBox.hgrow="ALWAYS">
+<VBox spacing="10">
+<MFXTextField floatingText="ID" fx:id="ID_BILL" prefWidth="250" prefHeight="40"/>
+<MFXFilterComboBox fx:id="ID_USER" floatingText="EMAIL" prefWidth="250" prefHeight="40"/>
+<MFXTextField floatingText="PHONE" fx:id="PHONE_BILL" prefWidth="250" prefHeight="40"/>
+<MFXTextField floatingText="ADDRESS" fx:id="ADD_BILL" prefWidth="250" prefHeight="40"/>
+</VBox>
+<HBox>
+<MFXComboBox fx:id="dateCombobox" prefWidth="250" prefHeight="40" promptText="DATE IMPORT">
+<items>
+<FXCollections fx:factory="observableArrayList">
+<String fx:value="Equal"/>
+<String fx:value="More"/>
+<String fx:value="Less"/>
+<String fx:value="Equal or More"/>
+<String fx:value="Equal or Less"/>
+</FXCollections>
+</items>
+</MFXComboBox>
+<MFXDatePicker fx:id="datePicker"/>
+<Spinner fx:id="hourSpinner" prefWidth="80"/>
+<Spinner fx:id="minuteSpinner" prefWidth="80"/>
+<Spinner fx:id="secondSpinner" prefWidth="80"/>
+</HBox>
+<HBox spacing="10" alignment="CENTER_LEFT">
+<MFXComboBox fx:id="totalPriceComboBox" prefWidth="250" prefHeight="40" promptText="TOTAL PRICE">
+<items>
+<FXCollections fx:factory="observableArrayList">
+<String fx:value="Equal"/>
+<String fx:value="More"/>
+<String fx:value="Less"/>
+<String fx:value="Equal or More"/>
+<String fx:value="Equal or Less"/>
+</FXCollections>
+</items>
+</MFXComboBox>
+<MFXTextField fx:id="TOTAL_PRICE" floatingText="ENTER PRICE" prefWidth="100" prefHeight="40"/>
+</HBox>
+<HBox>
+<MFXComboBox floatingText="STATUS" fx:id="BILL_STATUS" floatMode="BORDER" prefWidth="250" prefHeight="40">
+<items>
+<FXCollections fx:factory="observableArrayList">
+<String fx:value="Pending"/>
+<String fx:value="Payed"/>
+<String fx:value="Shipped"/>
+<String fx:value="Delivered"/>
+<String fx:value="Cancel"/>
+<String fx:value="None"/>
+</FXCollections>
+</items>
+</MFXComboBox>
+</HBox>
+</VBox>
+</HBox>
+<MFXButton fx:id="applyButton" buttonType="RAISED" mnemonicParsing="false" text="Create" prefWidth="80" prefHeight="40" styleClass="Btn"/>
+</VBox>

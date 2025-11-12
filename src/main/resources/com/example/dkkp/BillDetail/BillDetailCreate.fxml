@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?import io.github.palexdev.materialfx.controls.MFXButton?>
+<?import io.github.palexdev.materialfx.controls.MFXTextField?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.control.Label?>
+<?import io.github.palexdev.materialfx.controls.MFXFilterComboBox?>
+<VBox xmlns:fx="http://javafx.com/fxml" spacing="20" stylesheets="@../DKKP.css">
+<MFXButton buttonType="RAISED" fx:id="back" mnemonicParsing="false" text="Back" prefWidth="50" prefHeight="25" styleClass="Btn"/>
+<Label styleClass="pdLabel">CREATE IMPORT DETAIL</Label>
+<MFXFilterComboBox fx:id="ID_FINAL_PRODUCT" floatingText="FINAL PRODUCT" floatMode="BORDER" prefWidth="250" prefHeight="40"/>
+<MFXTextField floatingText="QUANTITY" fx:id="QUANTITY_SP" floatMode="BORDER" prefWidth="250" prefHeight="40"/>
+<MFXButton fx:id="createBtn" buttonType="RAISED" mnemonicParsing="false" text="Create" prefWidth="80" prefHeight="40" styleClass="Btn"/>
+</VBox>

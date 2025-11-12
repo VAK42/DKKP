@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?import io.github.palexdev.materialfx.controls.MFXTextField?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.StackPane?>
+<VBox prefHeight="500.0" prefWidth="350.0" spacing="15" xmlns="http://javafx.com/javafx/17.0.12" xmlns:fx="http://javafx.com/fxml/1" styleClass="productAP" stylesheets="@DKKP.css">
+<MFXTextField floatingText="FILE NAME" fx:id="fileToEx" floatMode="BORDER" prefWidth="250" prefHeight="40"/>
+</VBox>

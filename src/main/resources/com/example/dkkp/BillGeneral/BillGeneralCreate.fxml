@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?import io.github.palexdev.materialfx.controls.MFXButton?>
+<?import io.github.palexdev.materialfx.controls.MFXTextField?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.StackPane?>
+<?import javafx.scene.control.Label?>
+<?import io.github.palexdev.materialfx.controls.MFXFilterComboBox?>
+<?import javafx.scene.control.Spinner?>
+<?import io.github.palexdev.materialfx.controls.MFXTableView?>
+<?import io.github.palexdev.materialfx.controls.MFXTableColumn?>
+<?import io.github.palexdev.materialfx.controls.MFXDatePicker?>
+<StackPane xmlns:fx="http://javafx.com/fxml">
+<VBox spacing="5">
+<MFXButton buttonType="RAISED" fx:id="back" mnemonicParsing="false" text="BACK" prefWidth="50" prefHeight="25" styleClass="Btn"/>
+<HBox spacing="5">
+<VBox spacing="5" alignment="TOP_CENTER">
+<Label styleClass="pdLabel">BILL DETAIL TABLE</Label>
+<HBox spacing="5">
+<MFXButton buttonType="RAISED" fx:id="createBillDetail" mnemonicParsing="false" text="CREATE" prefWidth="120" prefHeight="25" styleClass="Btn"/>
+<MFXButton buttonType="RAISED" fx:id="deleteBillDetail" mnemonicParsing="false" text="DELETE" prefWidth="120" prefHeight="25" styleClass="Btn"/>
+</HBox>
+<MFXTableView fx:id="billDetailTable" footerVisible="false" prefWidth="700" minHeight="380">
+<tableColumns>
+<MFXTableColumn fx:id="ID_FINAL_PRODUCT" text="ID FINAL PRODUCT" styleClass="productBF" style="-fx-font-size: 10px;"/>
+<MFXTableColumn fx:id="QUANTITY_SP" text="QUANTITY" styleClass="productBF" style="-fx-font-size: 10px;"/>
+<MFXTableColumn fx:id="UNIT_PRICE" text="UNIT PRICE" styleClass="productBF" style="-fx-font-size: 10px;"/>
+<MFXTableColumn fx:id="TOTAL_DETAIL_PRICE" text="TOTAL PRICE" styleClass="productBF" style="-fx-font-size: 10px;"/>
+<MFXTableColumn fx:id="AVAILABLE" text="AVAILABLE" styleClass="productBF" style="-fx-font-size: 10px;"/>
+</tableColumns>
+</MFXTableView>
+</VBox>
+<VBox spacing="20">
+<Label styleClass="pdLabel">CREATE BASE PRODUCT</Label>
+<MFXFilterComboBox floatingText="ID USER" fx:id="ID_USER" floatMode="BORDER" prefWidth="250" prefHeight="40">
+</MFXFilterComboBox>
+<HBox>
+<MFXDatePicker promptText="BILL DATE" fx:id="datePicker"/>
+<Spinner fx:id="hourSpinner" prefWidth="80"/>
+<Spinner fx:id="minuteSpinner" prefWidth="80"/>
+<Spinner fx:id="secondSpinner" prefWidth="80"/>
+</HBox>
+<MFXTextField floatingText="PHONE" fx:id="PHONE_BILL" floatMode="BORDER" prefWidth="250" prefHeight="40"/>
+<MFXTextField floatingText="ADDRESS" fx:id="ADD_BILL" floatMode="BORDER" prefWidth="250" prefHeight="40"/>
+<MFXTextField floatingText="DESCRIPTION" fx:id="DESCRIPTION" floatMode="BORDER" prefWidth="250" prefHeight="40"/>
+<VBox alignment="BOTTOM_CENTER">
+<MFXButton fx:id="createBtn" buttonType="RAISED" mnemonicParsing="false" text="Create" prefWidth="80" prefHeight="40" styleClass="Btn"/>
+</VBox>
+</VBox>
+</HBox>
+</VBox>
+</StackPane>

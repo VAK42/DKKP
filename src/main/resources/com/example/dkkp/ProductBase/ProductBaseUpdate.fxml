@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?import io.github.palexdev.materialfx.controls.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ScrollPane?>
+<?import io.github.palexdev.materialfx.controls.MFXTableColumn?>
+<StackPane xmlns:fx="http://javafx.com/fxml" stylesheets="@../DKKP.css" prefWidth="-Infinity">
+<ScrollPane fitToWidth="true" fitToHeight="true">
+<VBox spacing="20" prefWidth="800">
+<MFXButton fx:id="backBtn" buttonType="RAISED" mnemonicParsing="false" text="Back" prefWidth="50" prefHeight="25" styleClass="Btn"/>
+<HBox alignment="TOP_CENTER">
+<VBox spacing="10" alignment="TOP_CENTER" HBox.hgrow="ALWAYS">
+<HBox>
+<MFXButton alignment="TOP_LEFT" fx:id="createBtn" buttonType="RAISED" mnemonicParsing="false" text="Create" prefWidth="100" prefHeight="25" styleClass="Btn"/>
+<Label alignment="CENTER" text="Attribute Values Table" styleClass="pdLabel"/>
+</HBox>
+<StackPane fx:id="attributeValue" maxWidth="800" HBox.hgrow="ALWAYS">
+<MFXTableView fx:id="attributeValueTable" footerVisible="false" prefWidth="700" minHeight="380">
+<tableColumns>
+<MFXTableColumn fx:id="ID" text="ID" styleClass="productBF" maxWidth="10" style="-fx-font-size: 10px;"/>
+<MFXTableColumn fx:id="ID_ATTRIBUTE" text="ID_ATTRIBUTE" styleClass="productBF" style="-fx-font-size: 10px;"/>
+<MFXTableColumn fx:id="NAME_ATTRIBUTE" text="NAME ATTRIBUTE" styleClass="productBF" style="-fx-font-size: 10px;"/>
+<MFXTableColumn fx:id="VALUE" text="VALUE" styleClass="productBF" style="-fx-font-size: 10px;"/>
+</tableColumns>
+</MFXTableView>
+</StackPane>
+<StackPane>
+<MFXTableView fx:id="finalProductTable" footerVisible="false" prefWidth="700" minHeight="380">
+<tableColumns>
+<MFXTableColumn fx:id="ID_P" text="ID" styleClass="productBF" maxWidth="10" style="-fx-font-size: 10px;"/>
+<MFXTableColumn fx:id="NAME_P" text="NAME" styleClass="productBF" style="-fx-font-size: 10px;"/>
+<MFXTableColumn fx:id="DES" text="DESCRIPTION" styleClass="productBF" style="-fx-font-size: 10px;"/>
+</tableColumns>
+</MFXTableView>
+</StackPane>
+</VBox>
+<VBox spacing="10" alignment="TOP_CENTER" HBox.hgrow="ALWAYS">
+<Label styleClass="pdLabel">PRODUCT</Label>
+<MFXTextField editable="false" fx:id="id" floatingText="ID" floatMode="BORDER" prefWidth="200" prefHeight="40"/>
+<MFXTextField fx:id="name" floatingText="NAME" floatMode="BORDER" prefWidth="200" prefHeight="40"/>
+<MFXTextField fx:id="des" floatingText="DESCRIPTION" floatMode="BORDER" prefWidth="200" prefHeight="40"/>
+<MFXTextField editable="false" fx:id="quantity" floatingText="QUANTITY" floatMode="BORDER" prefWidth="200" prefHeight="40"/>
+<MFXTextField editable="false" fx:id="viewCount" floatingText="VIEW COUNT" floatMode="BORDER" prefWidth="200" prefHeight="40"/>
+<MFXDatePicker fx:id="date" prefWidth="200" prefHeight="40"/>
+<MFXFilterComboBox prefWidth="200" prefHeight="40" floatingText="BRAND" fx:id="brandField" floatMode="BORDER">
+</MFXFilterComboBox>
+<MFXFilterComboBox prefWidth="200" prefHeight="40" floatingText="CATEGORY" fx:id="cateField" floatMode="BORDER">
+</MFXFilterComboBox>
+</VBox>
+</HBox>
+<HBox alignment="TOP_CENTER" spacing="10">
+<MFXButton fx:id="updateBtn" buttonType="RAISED" mnemonicParsing="false" text="Update" prefWidth="80" prefHeight="40" styleClass="Btn"/>
+</HBox>
+</VBox>
+</ScrollPane>
+</StackPane>

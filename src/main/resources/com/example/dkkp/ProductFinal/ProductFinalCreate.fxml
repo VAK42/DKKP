@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.StackPane?>
+<?import javafx.geometry.Insets?>
+<?import io.github.palexdev.materialfx.controls.MFXButton?>
+<?import io.github.palexdev.materialfx.controls.MFXTextField?>
+<?import io.github.palexdev.materialfx.controls.MFXComboBox?>
+<?import io.github.palexdev.materialfx.controls.MFXFilterComboBox?>
+<?import javafx.scene.image.ImageView?>
+<StackPane xmlns:fx="http://javafx.com/fxml" fx:id="main" styleClass="productAP">
+<VBox spacing="10">
+<MFXButton fx:id="back" buttonType="RAISED" mnemonicParsing="false" text="Back" prefWidth="70" styleClass="Btn"/>
+<HBox spacing="5">
+<MFXButton fx:id="image" buttonType="RAISED" mnemonicParsing="false" text="Image" styleClass="Btn"/>
+</HBox>
+<HBox>
+<ImageView fx:id="imageView" fitWidth="300" fitHeight="200" preserveRatio="true"/>
+</HBox>
+<HBox spacing="5">
+</HBox>
+<HBox spacing="5">
+<MFXFilterComboBox floatingText="BASE PRODUCT" fx:id="ID_BASE_PRODUCT" floatMode="BORDER" prefWidth="400" prefHeight="40"/>
+</HBox>
+<HBox spacing="5">
+<MFXTextField fx:id="NAME_PRODUCT" floatingText="NAME PRODUCT" floatMode="BORDER" prefWidth="200"/>
+</HBox>
+<HBox spacing="5">
+<MFXTextField fx:id="DES_PRODUCT" floatingText="DESCRIPTION" floatMode="BORDER" prefWidth="200"/>
+</HBox>
+<HBox spacing="5">
+<MFXTextField fx:id="PRICE" floatingText="PRICE" floatMode="BORDER" prefWidth="200"/>
+</HBox>
+<HBox spacing="5">
+<MFXTextField fx:id="DISCOUNT" floatingText="DISCOUNT" floatMode="BORDER" prefWidth="200"/>
+</HBox>
+<HBox alignment="CENTER">
+<MFXButton fx:id="createBtn" buttonType="RAISED" mnemonicParsing="false" text="Create" styleClass="Btn"/>
+</HBox>
+</VBox>
+</StackPane>

@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?import io.github.palexdev.materialfx.controls.*?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.layout.StackPane?>
+<VBox xmlns:fx="http://javafx.com/fxml" spacing="20" maxWidth="7000">
+<HBox spacing="10" styleClass="productNav">
+<VBox alignment="CENTER">
+<MFXButton fx:id="importGeneral" buttonType="RAISED" mnemonicParsing="false" text="IMPORT GENERAL" styleClass="productNavBtn"/>
+</VBox>
+<VBox alignment="CENTER">
+<MFXButton fx:id="importDetail" buttonType="RAISED" mnemonicParsing="false" text="IMPORT DETAIL" styleClass="productNavBtn"/>
+</VBox>
+</HBox>
+<StackPane fx:id="main"/>
+</VBox>

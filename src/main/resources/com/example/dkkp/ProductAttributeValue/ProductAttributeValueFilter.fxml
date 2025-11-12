@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?import javafx.scene.layout.*?>
+<?import io.github.palexdev.materialfx.controls.MFXButton?>
+<?import io.github.palexdev.materialfx.controls.MFXTextField?>
+<?import io.github.palexdev.materialfx.controls.MFXFilterComboBox?>
+<VBox prefHeight="500.0" prefWidth="350.0" spacing="15" xmlns="http://javafx.com/javafx/17.0.12" xmlns:fx="http://javafx.com/fxml/1" styleClass="productAP" stylesheets="@../DKKP.css">
+<MFXButton buttonType="RAISED" fx:id="back" mnemonicParsing="false" text="Back" prefWidth="50" prefHeight="25" styleClass="Btn"/>
+<HBox alignment="TOP_CENTER" prefHeight="60.0" prefWidth="350.0">
+<VBox spacing="10" alignment="TOP_CENTER" HBox.hgrow="ALWAYS">
+<MFXTextField floatingText="ID" fx:id="ID" prefWidth="250" prefHeight="40"/>
+<MFXTextField floatingText="VALUE" fx:id="VALUE" prefWidth="250" prefHeight="40"/>
+<MFXFilterComboBox fx:id="baseProductField" floatingText="BASE PRODUCT" prefWidth="250" prefHeight="40"/>
+<MFXFilterComboBox fx:id="attributeField" floatingText="ATTRIBUTE" floatMode="BORDER" prefWidth="250" prefHeight="40"/>
+</VBox>
+</HBox>
+<HBox alignment="CENTER" prefHeight="60.0" prefWidth="350.0">
+<MFXButton fx:id="applyButton" buttonType="RAISED" mnemonicParsing="false" text="Apply" prefWidth="80" prefHeight="40" styleClass="Btn"/>
+</HBox>
+</VBox>

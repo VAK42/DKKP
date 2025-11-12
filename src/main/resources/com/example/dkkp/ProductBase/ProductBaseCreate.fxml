@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?import io.github.palexdev.materialfx.controls.MFXButton?>
+<?import io.github.palexdev.materialfx.controls.MFXTextField?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.StackPane?>
+<?import javafx.scene.control.Label?>
+<?import javafx.collections.FXCollections?>
+<?import java.lang.String?>
+<?import io.github.palexdev.materialfx.controls.MFXFilterComboBox?>
+<?import io.github.palexdev.materialfx.controls.MFXDatePicker?>
+<StackPane xmlns:fx="http://javafx.com/fxml">
+<VBox spacing="20">
+<MFXButton buttonType="RAISED" fx:id="back" mnemonicParsing="false" text="Back" prefWidth="50" prefHeight="25" styleClass="Btn"/>
+<HBox alignment="TOP_CENTER">
+<VBox spacing="10" alignment="TOP_CENTER" HBox.hgrow="ALWAYS">
+<Label styleClass="pdLabel">CREATE BASE PRODUCT</Label>
+<MFXTextField floatingText="NAME" fx:id="nameField" floatMode="BORDER" prefWidth="250" prefHeight="40"/>
+<MFXDatePicker fx:id="releaseDatePicker" promptText="RELEASE DATE" prefWidth="250" prefHeight="40"/>
+<MFXTextField floatingText="DESCRIPTION" fx:id="desField" floatMode="BORDER" prefWidth="250" prefHeight="40"/>
+<MFXFilterComboBox floatingText="BRAND" fx:id="brandField" floatMode="BORDER" prefWidth="250" prefHeight="40">
+</MFXFilterComboBox>
+<MFXFilterComboBox floatingText="CATEGORY" fx:id="cateField" floatMode="BORDER" prefWidth="250" prefHeight="40">
+</MFXFilterComboBox>
+</VBox>
+</HBox>
+<HBox alignment="TOP_CENTER" spacing="10">
+<MFXButton fx:id="createBtn" buttonType="RAISED" mnemonicParsing="false" text="Create" prefWidth="80" prefHeight="40" styleClass="Btn"/>
+</HBox>
+</VBox>
+</StackPane>

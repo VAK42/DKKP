@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?import java.lang.*?>
+<?import javafx.collections.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import io.github.palexdev.materialfx.controls.MFXButton?>
+<?import io.github.palexdev.materialfx.controls.MFXComboBox?>
+<?import io.github.palexdev.materialfx.controls.MFXTextField?>
+<?import io.github.palexdev.materialfx.controls.MFXFilterComboBox?>
+<VBox prefHeight="500.0" prefWidth="350.0" spacing="15" xmlns="http://javafx.com/javafx/17.0.12" xmlns:fx="http://javafx.com/fxml/1" styleClass="productAP" stylesheets="@../DKKP.css">
+<MFXButton buttonType="RAISED" fx:id="back" mnemonicParsing="false" text="Back" prefWidth="50" prefHeight="25" styleClass="Btn"/>
+<HBox alignment="TOP_CENTER" prefHeight="60.0" prefWidth="350.0">
+<VBox spacing="10" alignment="TOP_CENTER" HBox.hgrow="ALWAYS">
+<VBox spacing="10">
+<MFXTextField floatingText="ID IMPORT DETAIL" fx:id="ID_IMPD" prefWidth="250" prefHeight="40"/>
+<MFXFilterComboBox fx:id="ID_IMPORT" floatingText="ID IMPORT" prefWidth="250" prefHeight="40"/>
+<MFXComboBox fx:id="isAvailableCombobox" prefWidth="250" prefHeight="40" floatingText="IS AVAILABLE">
+<items>
+<FXCollections fx:factory="observableArrayList">
+<String fx:value="Yes"/>
+<String fx:value="No"/>
+<String fx:value="Both"/>
+</FXCollections>
+</items>
+</MFXComboBox>
+<MFXFilterComboBox fx:id="baseProductCombobox" floatingText="BASE PRODUCT" floatMode="BORDER" prefWidth="250" prefHeight="40"/>
+<MFXFilterComboBox fx:id="finalProductCombobox" floatingText="FINAL PRODUCT" floatMode="BORDER" prefWidth="250" prefHeight="40"/>
+</VBox>
+<HBox spacing="10" alignment="CENTER_LEFT">
+<MFXComboBox fx:id="quantityCombobox" prefWidth="250" prefHeight="40" promptText="QUANTITY">
+<items>
+<FXCollections fx:factory="observableArrayList">
+<String fx:value="Equal"/>
+<String fx:value="More"/>
+<String fx:value="Less"/>
+<String fx:value="Equal or More"/>
+<String fx:value="Equal or Less"/>
+</FXCollections>
+</items>
+</MFXComboBox>
+<MFXTextField fx:id="quantityField" floatingText="ENTER QUANTITY" prefWidth="100" prefHeight="40"/>
+</HBox>
+<HBox spacing="10" alignment="CENTER_LEFT">
+<MFXComboBox fx:id="unitPriceCombobox" prefWidth="250" prefHeight="40" promptText="UNIT PRICE">
+<items>
+<FXCollections fx:factory="observableArrayList">
+<String fx:value="Equal"/>
+<String fx:value="More"/>
+<String fx:value="Less"/>
+<String fx:value="Equal or More"/>
+<String fx:value="Equal or Less"/>
+</FXCollections>
+</items>
+</MFXComboBox>
+<MFXTextField fx:id="unitPriceField" floatingText="ENTER UNIT PRICE" prefWidth="100" prefHeight="40"/>
+</HBox>
+<HBox spacing="10" alignment="CENTER_LEFT">
+<MFXComboBox fx:id="totalPriceCombobox" promptText="TOTAL PRICE" prefWidth="250" prefHeight="40">
+<items>
+<FXCollections fx:factory="observableArrayList">
+<String fx:value="Equal"/>
+<String fx:value="More"/>
+<String fx:value="Less"/>
+<String fx:value="Equal or More"/>
+<String fx:value="Equal or Less"/>
+</FXCollections>
+</items>
+</MFXComboBox>
+<MFXTextField fx:id="totalPriceField" floatingText="ENTER TOTAL PRICE" prefWidth="100" prefHeight="40"/>
+</HBox>
+</VBox>
+</HBox>
+<HBox alignment="CENTER" prefHeight="60.0" prefWidth="350.0">
+<MFXButton fx:id="applyButton" buttonType="RAISED" mnemonicParsing="false" text="Create" prefWidth="80" prefHeight="40" styleClass="Btn"/>
+</HBox>
+</VBox>

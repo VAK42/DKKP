@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?import io.github.palexdev.materialfx.controls.MFXButton?>
+<?import io.github.palexdev.materialfx.controls.MFXTextField?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.control.Label?>
+<?import io.github.palexdev.materialfx.controls.MFXTableView?>
+<?import io.github.palexdev.materialfx.controls.MFXTableColumn?>
+<?import javafx.scene.control.ScrollPane?>
+<ScrollPane xmlns:fx="http://javafx.com/fxml" stylesheets="@../DKKP.css" fitToWidth="true" fitToHeight="true">
+<VBox spacing="20" prefWidth="800">
+<MFXButton fx:id="backBtn" buttonType="RAISED" mnemonicParsing="false" text="Back" prefWidth="50" prefHeight="25" styleClass="Btn"/>
+<HBox alignment="TOP_CENTER">
+<VBox spacing="10" alignment="TOP_CENTER" HBox.hgrow="ALWAYS">
+<HBox>
+<Label alignment="CENTER" text="IMPORT DETAIL TABLE" styleClass="pdLabel"/>
+</HBox>
+<MFXTableView fx:id="importDetailTable" footerVisible="false" prefWidth="700" minHeight="380">
+<tableColumns>
+<MFXTableColumn fx:id="ID_IMPD" text="ID" styleClass="productBF" style="-fx-font-size: 10px;"/>
+<MFXTableColumn fx:id="ID_BASE_PRODUCT" text="ID BASE PRODUCT" styleClass="productBF" style="-fx-font-size: 10px;"/>
+<MFXTableColumn fx:id="ID_FINAL_PRODUCT" text="ID FINAL PRODUCT" styleClass="productBF" style="-fx-font-size: 10px;"/>
+<MFXTableColumn fx:id="QUANTITY" text="QUANTITY" styleClass="productBF" style="-fx-font-size: 10px;"/>
+<MFXTableColumn fx:id="UNIT_PRICE" text="UNIT PRICE" styleClass="productBF" style="-fx-font-size: 10px;"/>
+<MFXTableColumn fx:id="TOTAL_PRICED" text="TOTAL PRICE" styleClass="productBF" style="-fx-font-size: 10px;"/>
+<MFXTableColumn fx:id="DESCRIPTIOND" text="DESCRIPTION" styleClass="productBF" style="-fx-font-size: 10px;"/>
+</tableColumns>
+</MFXTableView>
+</VBox>
+<VBox spacing="10" alignment="TOP_CENTER" HBox.hgrow="ALWAYS">
+<Label styleClass="pdLabel">IMPORT GENERAL</Label>
+<MFXTextField editable="false" fx:id="ID_IMP" floatingText="ID" floatMode="BORDER" prefWidth="200" prefHeight="40"/>
+<MFXTextField editable="false" fx:id="ID_REPLACE" floatingText="ID_REPLACE" floatMode="BORDER" prefWidth="200" prefHeight="40"/>
+<MFXTextField editable="false" fx:id="TOTAL_PRICE" floatingText="TOTAL PRICE" floatMode="BORDER" prefWidth="200" prefHeight="40"/>
+<MFXTextField editable="false" fx:id="IS_AVAILABLE" floatingText="IS AVAILABLE" floatMode="BORDER" prefWidth="200" prefHeight="40"/>
+<MFXTextField editable="false" fx:id="DESCRIPTION" floatingText="DESCRIPTION" floatMode="BORDER" prefWidth="200" prefHeight="40"/>
+<MFXTextField editable="false" fx:id="DATE_IMP" floatingText="DATE IMPORT" floatMode="BORDER" prefWidth="200" prefHeight="40"/>
+</VBox>
+</HBox>
+</VBox>
+</ScrollPane>

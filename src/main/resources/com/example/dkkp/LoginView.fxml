@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?import io.github.palexdev.materialfx.controls.MFXButton?>
+<?import io.github.palexdev.materialfx.controls.MFXTextField?>
+<?import io.github.palexdev.materialfx.controls.MFXPasswordField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.StackPane?>
+<?import javafx.scene.layout.VBox?>
+<StackPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="600" minWidth="800" prefHeight="760" prefWidth="1280" xmlns:fx="http://javafx.com/fxml" fx:controller="com.example.dkkp.controller.LoginController" stylesheets="@DKKP.css" styleClass="loginSP">
+<VBox maxHeight="320" maxWidth="250" minHeight="320" minWidth="250" prefHeight="320" prefWidth="250" alignment="CENTER" spacing="20.0" styleClass="loginVB">
+<ImageView fitWidth="100.0" fitHeight="100.0" preserveRatio="true">
+<Image url="@DKKP.png"/>
+</ImageView>
+<MFXTextField fx:id="username" floatingText="Email" floatMode="BORDER" prefWidth="200" prefHeight="40"/>
+<MFXPasswordField fx:id="password" floatingText="Password" floatMode="BORDER" prefWidth="200" prefHeight="40"/>
+<MFXButton buttonType="RAISED" mnemonicParsing="false" text="Login" prefWidth="100" prefHeight="40" onAction="#handleLogin" styleClass="Btn"/>
+</VBox>
+</StackPane>
